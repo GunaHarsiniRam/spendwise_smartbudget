@@ -1,0 +1,25 @@
+◇ injected env (7) from .env // tip: ◈ encrypted .env [www.dotenvx.com]
+✅ OpenAI connected — GPT-4 Vision receipt scanning enabled
+✅ MongoDB connected: mongodb://localhost:27017/spendwise
+node:events:486
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE: address already in use :::5000
+    at Server.setupListenHandle [as _listen2] (node:net:1940:16)
+    at listenInCluster (node:net:1997:12)
+    at Server.listen (node:net:2102:7)
+    at app.listen (c:\Users\rguna\Downloads\Smart budget\Smart budget\backend\node_modules\express\lib\application.js:635:24)
+    at c:\Users\rguna\Downloads\Smart budget\Smart budget\backend\server.js:73:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Emitted 'error' event on Server instance at:
+    at emitErrorNT (node:net:1976:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+  code: 'EADDRINUSE',
+  errno: -4091,
+  syscall: 'listen',
+  address: '::',
+  port: 5000
+}
+
+Node.js v25.2.1
